@@ -1,8 +1,8 @@
 name: Besteam V1 Web Website
 on:
   push:
-	branches:
-      - 'tmp'
+    branches:
+      - 'master'
     paths:
       - Web/besteam-v1-web-website/**/*.*
       - .github/workflows/besteam-v1-web-website.yml
@@ -30,7 +30,7 @@ jobs:
             ref: "master",                       
             inputs: {
               ORGANIZATION_NAME: process.env.ORGANIZATION_NAME,
-			  REPO_NAME: process.env.REPO_NAME,
+              REPO_NAME: process.env.REPO_NAME,
               REPO_SLUG: process.env.REPO_SLUG, 
               RELEASE_VERSION: process.env.RELEASE_VERSION
             }
