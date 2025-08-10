@@ -1,0 +1,373 @@
+.topLanding {
+  display: flex;
+  flex-direction: column;
+  background-image: url('./media/backgroundRicchi.png');
+  background-size: cover;
+  /* Adatta l'immagine per coprire tutto il contenitore */
+  background-position: center;
+  /* Centra l'immagine */
+  background-repeat: no-repeat;
+  /* Evita la ripetizione dell'immagine */
+  width: 100%;
+  max-width: 100%;
+  height: 709px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 40px;
+
+}
+
+.listaCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 16px
+}
+
+
+.tiktoklogo {
+  width: 218px;
+  height: 51px
+ 
+}
+.testoGrandeLanding {
+  margin: 0px;
+  color: #2DC653;
+  text-align: center;
+  font-family: "DINProBlackItalic";
+  font-size: 96px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.testoPiccoloLanding {
+  margin: 0px;
+
+  color: var(--icon-color, #FFF);
+  text-align: center;
+  font-family: DINPro;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+
+.frecciaImmagine {
+  width: 40px;
+  height: 40px;
+}
+
+.secondaParte {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-color: #1c1c1c;
+  margin-bottom: -100px;
+}
+
+.ourStaff {
+  color: #2DC653;
+  text-align: center;
+  font-family: DINPro;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 68px;
+  margin-bottom: 68px;
+}
+
+.inputSearch {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  flex: 1 0 0;
+  overflow: hidden;
+  color: #828282;
+  text-overflow: ellipsis;
+  font-family: DINPro;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search-bar {
+  align-items: center;
+  background-color: #292929;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 16px;
+  height: 90px;
+  justify-content: center;
+  padding: 24px;
+  position: relative;
+}
+
+.search-bar .interface-search {
+  height: 32px !important;
+  position: relative !important;
+  width: 32px !important;
+}
+
+.search-bar .text-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: #818181;
+  display: -webkit-box;
+  flex: 1;
+  font-family: "DINPro-Regular", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -0.5px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+.cardCreatorContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+}
+
+.gestioneCentrale {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.inputStyle {
+  background: #292929;
+  display: flex;
+  height: 90px;
+  padding: 24px;
+  padding-left: 50px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 16px;
+  flex: 1 0 0;
+  flex-wrap: wrap;
+  width: 1017px;
+  border: none;
+  overflow: hidden;
+  color: #828282;
+  text-overflow: ellipsis;
+  font-family: DINPro;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search-container {
+  position: relative;
+
+  max-width: 400px;
+  margin-bottom: 16px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 16px 8px 40px;
+  /* Spazio per l'icona */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  fill: #999;
+  /* Cambia colore se necessario */
+  pointer-events: none;
+}
+
+
+.searchAndFilter {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 72px;
+
+}
+
+.filterButton {
+  display: flex;
+  width: 200px;
+  height: 90px;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  background: #4E4E4E;
+}
+
+.testoFiltri {
+  overflow: hidden;
+  color: #A1A1A1;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-family: DINPro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.testoContactUs {
+  color: var(--icon-color, #FFF);
+  text-align: center;
+  font-family: DINPro;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 91px
+}
+
+.immagineContactUs {
+  width: 24px;
+  height: 24px;
+  margin: 0px;
+}
+
+.sectionContactUs {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.riga {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.testoContactUs2 {
+  color: var(--icon-color, #FFF);
+  text-align: center;
+  font-family: DINPro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 4px;
+
+}
+.cardCreatorContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; /* Spazio tra le card */
+  margin-bottom: 30px;
+}
+
+.paginationControls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.paginationControls button {
+  background-color: transparent;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.paginationControls button:disabled {
+  
+  cursor: not-allowed;
+}
+
+
+@media screen and (max-width: 425px){
+  .tiktoklogo {
+    width: 169px;
+    height: 39px
+   
+  }
+  .testoGrandeLanding {
+    font-size: 32px;
+    width: 241px;
+  }
+  .testoPiccoloLanding {
+    margin: 0px;
+    width: 241px;
+  
+  
+    color: var(--icon-color, #FFF);
+    text-align: center;
+    font-family: DINPro;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .topLanding{
+    height: 621px;
+  }
+  .listaCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 16px
+  }
+  .cardCreatorContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+   gap: 16px
+  }
+  .inputStyle {
+    background: #292929;
+    display: flex;
+    height: 56px;
+    padding: 24px;
+    padding-left: 50px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+    flex: 1 0 0;
+    flex-wrap: wrap;
+    width: 232px;
+    border: none;
+    overflow: hidden;
+    color: #828282;
+    text-overflow: ellipsis;
+    font-family: DINPro;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  }
+  

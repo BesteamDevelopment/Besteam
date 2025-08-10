@@ -1,0 +1,938 @@
+.index {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .index .overlap-wrapper {
+    background-color: #ffffff;
+    height: 1080px;
+    overflow: hidden;
+    width: 1920px;
+  }
+  
+  .index .div {
+    height: 1080px;
+    position: relative;
+  }
+  
+  .index .sfondo {
+    height: 1080px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1920px;
+  }
+  
+  .index .rettangolo {
+    background-color: #e8e8e8;
+    height: 196px;
+    left: 0;
+    position: absolute;
+    top: 884px;
+    width: 1920px;
+  }
+  
+  .index .rettangolo-2 {
+    background-color: #d8d8d8;
+    height: 196px;
+    left: 0;
+    position: absolute;
+    top: 688px;
+    width: 1920px;
+  }
+  
+  .index .rettangolo-3 {
+    background-color: #e8e8e8;
+    height: 196px;
+    left: 0;
+    position: absolute;
+    top: 492px;
+    width: 1920px;
+  }
+  
+  .index .rettangolo-4 {
+    background-color: #d8d8d8;
+    height: 196px;
+    left: 0;
+    position: absolute;
+    top: 296px;
+    width: 1920px;
+  }
+  
+  .index .rettangolo-5 {
+    background-color: #e8e8e8;
+    height: 196px;
+    left: 0;
+    position: absolute;
+    top: 100px;
+    width: 1920px;
+  }
+  
+  .index .rettangolo-6 {
+    background-color: #1c1c1c;
+    height: 1080px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1920px;
+  }
+  
+  .index .overlap-group-wrapper {
+    height: 860px;
+    left: 178px;
+    position: absolute;
+    top: 150px;
+    width: 820px;
+  }
+  
+  .index .overlap {
+    height: 860px;
+    position: relative;
+  }
+  
+  .index .foto-JOIN-NO {
+    background-image: url(https://cdn.animaapp.com/projects/65a160879aa2a391615fe61e/releases/65a1737d9ddbd16a74d42193/img/raggruppa-1@1x.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 850px;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 820px;
+  }
+  
+  .index .overlap-group {
+    height: 850px;
+    position: relative;
+  }
+  
+  .index .saturazione {
+    background-color: #e8e8e8;
+    height: 820px;
+    left: -15px;
+    mix-blend-mode: saturation;
+    opacity: 0.6;
+    position: absolute;
+    top: 15px;
+    transform: rotate(90deg);
+    width: 850px;
+  }
+  
+  .index .cornice {
+    border: 4px solid;
+    border-color: #e8e8e8;
+    height: 820px;
+    left: -15px;
+    mix-blend-mode: overlay;
+    opacity: 0.35;
+    position: absolute;
+    top: 15px;
+    transform: rotate(90deg);
+    width: 850px;
+  }
+  
+  .index .testo-e-sfumatura {
+    height: 470px;
+    left: 0;
+    position: absolute;
+    top: 390px;
+    width: 820px;
+  }
+  
+  .index .overlap-group-2 {
+    height: 480px;
+    position: relative;
+  }
+  
+  .index .rettangolo-7 {
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    height: 460px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 820px;
+  }
+  
+  .index .JOIN-a-TEAM {
+    color: #ffffff;
+    font-family: "DINPro-CondensedBlack", Helvetica;
+    font-size: 113.8px;
+    font-weight: 900;
+    height: 292px;
+    left: 241px;
+    letter-spacing: 0;
+    line-height: 97.5px;
+    position: absolute;
+    top: 188px;
+    width: 370px;
+  }
+  
+  .index .text-wrapper {
+    color: #ffffff;
+    font-family: "DINPro-CondensedBlack", Helvetica;
+    font-size: 113.8px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 97.5px;
+  }
+  
+  .index .span {
+    font-family: "DINPro-CondensedMedium", Helvetica;
+    font-weight: 500;
+  }
+  
+  .index .simbolo-CONTRACT {
+    height: 179px;
+    left: 45px;
+    mix-blend-mode: overlay;
+    object-fit: cover;
+    position: absolute;
+    top: 210px;
+    width: 177px;
+  }
+  
+  .index .foto-JOIN-SI {
+    background-image: url(https://cdn.animaapp.com/projects/65a160879aa2a391615fe61e/releases/65a1737d9ddbd16a74d42193/img/raggruppa-1@1x.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 850px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 820px;
+  }
+  
+  .index .cornice-2 {
+    border: 4px solid;
+    border-color: #e8e8e8;
+    height: 820px;
+    left: -15px;
+    mix-blend-mode: overlay;
+    opacity: 0.35;
+    position: relative;
+    top: 15px;
+    transform: rotate(90deg);
+    width: 850px;
+  }
+  
+  .index .p {
+    color: #2dc653;
+    font-family: "DINPro-CondensedBlack", Helvetica;
+    font-size: 113.8px;
+    font-weight: 900;
+    height: 292px;
+    left: 241px;
+    letter-spacing: 0;
+    line-height: 97.5px;
+    position: absolute;
+    top: 188px;
+    width: 370px;
+  }
+  
+  .index .text-wrapper-2 {
+    color: #2dc653;
+    font-family: "DINPro-CondensedBlack", Helvetica;
+    font-size: 113.8px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 97.5px;
+  }
+  
+  .index .simbolo-contratto {
+    height: 179px;
+    left: 45px;
+    object-fit: cover;
+    position: absolute;
+    top: 210px;
+    width: 177px;
+  }
+  
+  .index .div-wrapper {
+    height: 860px;
+    left: 1050px;
+    position: absolute;
+    top: 150px;
+    width: 820px;
+  }
+  
+  .index .foto-CREATE-NO {
+    background-image: url(https://cdn.animaapp.com/projects/65a160879aa2a391615fe61e/releases/65a1737d9ddbd16a74d42193/img/raggruppa-5@1x.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 850px;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 820px;
+  }
+  
+  .index .CREATE-a-TEAM {
+    color: #ffffff;
+    font-family: "DINPro-CondensedBlack", Helvetica;
+    font-size: 113.8px;
+    font-weight: 900;
+    height: 292px;
+    left: 262px;
+    letter-spacing: 0;
+    line-height: 97.5px;
+    position: absolute;
+    top: 188px;
+    width: 370px;
+  }
+  
+  .index .simbolo-YOUR-CLUB {
+    height: 179px;
+    left: 50px;
+    mix-blend-mode: overlay;
+    object-fit: cover;
+    position: absolute;
+    top: 210px;
+    width: 178px;
+  }
+  
+  .index .foto-CREATE-SI {
+    background-image: url(https://cdn.animaapp.com/projects/65a160879aa2a391615fe61e/releases/65a1737d9ddbd16a74d42193/img/raggruppa-5@1x.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 850px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 820px;
+  }
+  
+  .index .CREATE-a-TEAM-2 {
+    color: #2dc653;
+    font-family: "DINPro-CondensedBlack", Helvetica;
+    font-size: 113.8px;
+    font-weight: 900;
+    height: 292px;
+    left: 262px;
+    letter-spacing: 0;
+    line-height: 97.5px;
+    position: absolute;
+    top: 188px;
+    width: 370px;
+  }
+  
+  .index .img {
+    height: 179px;
+    left: 50px;
+    object-fit: cover;
+    position: absolute;
+    top: 210px;
+    width: 178px;
+  }
+  
+  .index .men-laterale {
+    background-color: #07260d;
+    height: 1080px;
+    left: 8px;
+    position: absolute;
+    top: 0;
+    width: 120px;
+  }
+  
+  .index .simbolo-exit {
+    height: 46px;
+    left: 44px;
+    object-fit: cover;
+    position: absolute;
+    top: 982px;
+    width: 44px;
+  }
+  
+  .index .simbolo-impostazioni {
+    height: 40px;
+    left: 40px;
+    object-fit: cover;
+    position: absolute;
+    top: 912px;
+    width: 40px;
+  }
+  
+  .index .valuta-MATIC {
+    height: 86px;
+    left: 40px;
+    position: absolute;
+    top: 707px;
+    width: 42px;
+  }
+  
+  .index .overlap-group-3 {
+    height: 43px;
+    left: 0;
+    position: absolute;
+    top: 43px;
+    width: 42px;
+  }
+  
+  .index .text-wrapper-3 {
+    color: #ffffff;
+    font-family: "DINPro", Helvetica;
+    font-size: 15px;
+    height: 32px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 18px;
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    width: 42px;
+  }
+  
+  .index .text-wrapper-4 {
+    color: #ffffff;
+    font-family: "DINPro", Helvetica;
+    font-size: 12px;
+    height: 24px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 14.4px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 42px;
+  }
+  
+  .index .img-2 {
+    height: 40px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 40px;
+  }
+  
+  .index .valuta-BTEM {
+    height: 86px;
+    left: 40px;
+    position: absolute;
+    top: 809px;
+    width: 42px;
+  }
+  
+  .index .bottone-BACK {
+    height: 44px;
+    left: 28px;
+    position: absolute;
+    top: 113px;
+    width: 65px;
+  }
+  
+  .index .overlap-2 {
+    height: 45px;
+    position: relative;
+  }
+  
+  .index .bottone-BACK-2 {
+    background-color: #07260d;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 65px;
+  }
+  
+  .index .text-wrapper-5 {
+    color: #2dc653;
+    font-family: "DINPro", Helvetica;
+    font-size: 12px;
+    height: 24px;
+    left: 12px;
+    letter-spacing: 0;
+    line-height: 14.4px;
+    position: absolute;
+    text-align: center;
+    top: 21px;
+    width: 42px;
+  }
+  
+  .index .linea {
+    height: 2px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 12px;
+    width: 65px;
+  }
+  
+  .index .armadietto-NFT {
+    height: 86px;
+    left: 34px;
+    position: absolute;
+    top: 600px;
+    width: 52px;
+  }
+  
+  .index .simbolo-armadietto {
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 52px;
+  }
+  
+  .index .tracciato {
+    height: 58px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 2px;
+    width: 25px;
+  }
+  
+  .index .tracciato-2 {
+    height: 60px;
+    left: 27px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 25px;
+  }
+  
+  .index .text-wrapper-6 {
+    color: #ffffff;
+    font-family: "DINPro", Helvetica;
+    font-size: 12px;
+    height: 24px;
+    left: 2px;
+    letter-spacing: 0;
+    line-height: 14.4px;
+    position: absolute;
+    text-align: center;
+    top: 63px;
+    width: 49px;
+  }
+  
+  .index .simbolo-NOTIFICHE {
+    height: 77px;
+    left: 36px;
+    position: absolute;
+    top: 505px;
+    width: 50px;
+  }
+  
+  .index .overlap-3 {
+    height: 52px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 49px;
+  }
+  
+  .index .simbolo-fischietto {
+    background-image: url(https://cdn.animaapp.com/projects/65a160879aa2a391615fe61e/releases/65a163c8b74d79d9e9bb466d/img/tracciato-16@1x.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 33px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    width: 49px;
+  }
+  
+  .index .overlap-group-4 {
+    height: 27px;
+    left: 3px;
+    position: relative;
+    top: 6px;
+    width: 45px;
+  }
+  
+  .index .tracciato-3 {
+    height: 26px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 1px;
+    width: 26px;
+  }
+  
+  .index .tracciato-4 {
+    height: 13px;
+    left: 24px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 21px;
+  }
+  
+  .index .ellisse {
+    background-color: #208b3a;
+    border-radius: 7.66px;
+    height: 15px;
+    left: 5px;
+    position: absolute;
+    top: 7px;
+    width: 15px;
+  }
+  
+  .index .notifica {
+    height: 26px;
+    left: 6px;
+    position: absolute;
+    top: 0;
+    width: 29px;
+  }
+  
+  .index .overlap-4 {
+    height: 28px;
+    position: relative;
+    top: -1px;
+  }
+  
+  .index .tracciato-5 {
+    height: 18px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 2px;
+    width: 28px;
+  }
+  
+  .index .text-wrapper-7 {
+    color: #ffffff;
+    font-family: "DINPro-Medium", Helvetica;
+    font-size: 12px;
+    font-weight: 500;
+    height: 28px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 14.4px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 29px;
+  }
+  
+  .index .text-wrapper-8 {
+    color: #ffffff;
+    font-family: "DINPro", Helvetica;
+    font-size: 12px;
+    height: 24px;
+    left: 1px;
+    letter-spacing: 0;
+    line-height: 14.4px;
+    position: absolute;
+    text-align: center;
+    top: 54px;
+    width: 49px;
+  }
+  
+  .index .men-superiore {
+    height: 124px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1920px;
+  }
+  
+  .index .overlap-5 {
+    height: 124px;
+    position: relative;
+  }
+  
+  .index .rettangolo-8 {
+    background-color: #000000;
+    height: 100px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1920px;
+  }
+  
+  .index .sfondi-bottoni {
+    height: 60px;
+    left: 490px;
+    position: absolute;
+    top: 20px;
+    width: 450px;
+  }
+  
+  .index .rettangolo-9 {
+    background-color: #2dc653;
+    height: 60px;
+    left: 270px;
+    position: absolute;
+    top: 0;
+    width: 180px;
+  }
+  
+  .index .rettangolo-10 {
+    background-color: #2dc653;
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 240px;
+  }
+  
+  .index .bottone-support {
+    height: 104px;
+    left: 1810px;
+    position: absolute;
+    top: 20px;
+    width: 62px;
+  }
+  
+  .index .overlap-group-5 {
+    height: 102px;
+    position: relative;
+  }
+  
+  .index .tracciato-6 {
+    height: 60px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 60px;
+  }
+  
+  .index .text-wrapper-9 {
+    color: #ffffff;
+    font-family: "DINPro-Medium", Helvetica;
+    font-size: 40px;
+    font-weight: 500;
+    height: 102px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 48px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 62px;
+  }
+  
+  .index .testi-bottoni {
+    height: 96px;
+    left: 490px;
+    position: absolute;
+    top: 26px;
+    width: 1292px;
+  }
+  
+  .index .text-wrapper-10 {
+    color: #ffffff;
+    font-family: "DINPro-Bold", Helvetica;
+    font-size: 35px;
+    font-weight: 700;
+    height: 98px;
+    left: 270px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    text-align: center;
+    top: -4px;
+    width: 182px;
+  }
+  
+  .index .text-wrapper-11 {
+    color: #ffffff;
+    font-family: "DINPro-Bold", Helvetica;
+    font-size: 35px;
+    font-weight: 700;
+    height: 98px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    text-align: center;
+    top: -4px;
+    width: 242px;
+  }
+  
+  .index .text-wrapper-12 {
+    color: #ffffff;
+    font-family: "DINPro-Medium", Helvetica;
+    font-size: 35px;
+    font-weight: 500;
+    height: 97px;
+    left: 690px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    text-align: center;
+    top: -2px;
+    width: 182px;
+  }
+  
+  .index .text-wrapper-13 {
+    color: #ffffff;
+    font-family: "DINPro-Medium", Helvetica;
+    font-size: 35px;
+    font-weight: 500;
+    height: 97px;
+    left: 480px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    text-align: center;
+    top: -2px;
+    width: 182px;
+  }
+  
+  .index .text-wrapper-14 {
+    color: #ffffff;
+    font-family: "DINPro-Medium", Helvetica;
+    font-size: 35px;
+    font-weight: 500;
+    height: 97px;
+    left: 1110px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    text-align: center;
+    top: -2px;
+    width: 182px;
+  }
+  
+  .index .text-wrapper-15 {
+    color: #ffffff;
+    font-family: "DINPro-Medium", Helvetica;
+    font-size: 35px;
+    font-weight: 500;
+    height: 97px;
+    left: 900px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    text-align: center;
+    top: -2px;
+    width: 182px;
+  }
+  
+  .index .logo-besteam {
+    height: 52px;
+    left: 44px;
+    position: absolute;
+    top: 24px;
+    width: 48px;
+  }
+  
+  .index .logotipo-besteam {
+    height: 52px;
+  }
+  
+  .index .overlap-group-6 {
+    height: 52px;
+    position: relative;
+    width: 48px;
+  }
+  
+  .index .tracciato-7 {
+    height: 15px;
+    left: 1px;
+    object-fit: cover;
+    position: absolute;
+    top: 3px;
+    width: 14px;
+  }
+  
+  .index .tracciato-8 {
+    height: 44px;
+    left: 16px;
+    object-fit: cover;
+    position: absolute;
+    top: 3px;
+    width: 31px;
+  }
+  
+  .index .tracciato-9 {
+    height: 20px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 32px;
+    width: 11px;
+  }
+  
+  .index .tracciato-10 {
+    height: 20px;
+    left: 11px;
+    object-fit: cover;
+    position: absolute;
+    top: 32px;
+    width: 14px;
+  }
+  
+  .index .tracciato-11 {
+    height: 16px;
+    left: 3px;
+    object-fit: cover;
+    position: absolute;
+    top: 16px;
+    width: 10px;
+  }
+  
+  .index .tracciato-12 {
+    height: 36px;
+    left: 14px;
+    object-fit: cover;
+    position: absolute;
+    top: 16px;
+    width: 26px;
+  }
+  
+  .index .tracciato-13 {
+    height: 19px;
+    left: 17px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 30px;
+  }
+  
+  .index .tracciato-14 {
+    height: 4px;
+    left: 1px;
+    object-fit: cover;
+    position: absolute;
+    top: 2px;
+    width: 14px;
+  }
+  
+  .index .cornice-men-laterale {
+    height: 1080px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 8px;
+  }
+  
+  .index .rettangolo-11 {
+    background-color: #208b3a;
+    height: 8px;
+    left: -176px;
+    position: absolute;
+    top: 896px;
+    transform: rotate(90deg);
+    width: 360px;
+  }
+  
+  .index .rettangolo-12 {
+    background-color: #208b3a;
+    height: 8px;
+    left: -176px;
+    position: absolute;
+    top: 176px;
+    transform: rotate(90deg);
+    width: 360px;
+  }
+  
+  .index .rettangolo-13 {
+    background-color: #2dc653;
+    height: 8px;
+    left: -176px;
+    position: absolute;
+    top: 536px;
+    transform: rotate(90deg);
+    width: 360px;
+  }
+  

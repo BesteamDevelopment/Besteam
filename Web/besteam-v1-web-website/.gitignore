@@ -1,0 +1,18 @@
+# JetBrains
+/.idea
+
+# OSX
+.DS_Store
+
+# Docker
+docker-compose.yml
+.env
+
+# Build
+/build
+
+# Node
+/node_modules
+
+# Yarn
+yarn-error.log

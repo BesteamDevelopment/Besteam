@@ -1,0 +1,16 @@
+{
+  "wallet_code": "0x25588950f6a63c08EF73820E58C999aCB5691A0c",
+  "game_wallet": 123.45,
+  "email": "g@gmail.com",
+  "nickname": "string",
+  "nationality": "string",
+  "player_location": "string",
+  "date_of_birth": "11-12-1984",
+  "gender": "string",
+  "favourite_role": "Goalkeeper",
+  "actual_role": "Coach",
+  "accepted_newsletter": true,
+  "accepted_privacy": true,
+  "enabled": true,
+  "payment_verified": true
+}

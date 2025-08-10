@@ -1,0 +1,25 @@
+{
+  "short_name": "Besteam.io",
+  "name": "The VIRTUAL FOOTBALL METAVERSE play 11vs11, and BE the firST ",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "BS.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "BSpng",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

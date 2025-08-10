@@ -1,0 +1,142 @@
+.body-whitepaper{
+    height: 100%;
+    background: linear-gradient(180deg, #e8e8e8 50%, #d8d8d8 50%);    
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    background-size: 100% 700px;
+    font-family: "Bonn";
+    font-size:18px;
+}
+.body-whitepaper2{
+    height: 100%;
+    background-image: url(../components/video/preicosfondo.png);    
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    background-size: 100%;
+    font-family: "Bonn";
+    font-size:18px;
+}
+.download-text{
+    font-style:normal;
+    color:#000;
+    font-family: "Bonn";
+
+}
+.lunghezza{
+    width:200px!important;
+}
+
+.exsum{
+    display:flex;
+    flex-direction:column;
+    text-align:left;
+
+}
+
+.download-whitepaper{
+   
+    margin-top:30px;
+    
+}
+.navbarstyle{
+        margin-top:30px;
+        display:flex;
+        flex-direction: column;
+        width:17%;
+        align-items: left;
+        text-align:left;
+        margin-left:4%;
+}
+.download-whitepaper{
+    display:flex;
+    flex-direction:column;
+    text-align:left;
+    align-content: left;
+    align-items:left;
+  
+}
+.navbarstyle a {
+    color:#000;
+    font-family:"Bonn";
+    font-style: normal;   
+    
+}
+.line-right{
+    border-right: 1px solid #ffffff;
+    height:auto;
+}
+
+.titolo-paragrafo{
+    font-size:20px;
+}
+
+.immagine-overview{
+   
+    width:100%;
+}
+
+.button-no{
+    display:none;
+}
+
+.avatar-class{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    align-content: center;
+}
+
+.image-avatar{
+    width:20%;
+    height:auto;
+}
+
+.image-avatar2{
+    width:80%
+}
+
+.text-avatar{
+    margin-left:20px;
+}
+
+.content-class{
+    min-height:700px;
+    margin-left:50px;
+    display:flex;
+    padding:20px;
+    width:55%;
+}
+
+.titolo-whitepaper{
+    color:#1a7431;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.sottotitolo-whitepaper{
+    color:#1a7431;
+    font-weight:bold;
+    font-size:20px;
+
+}
+
+.secondo-sottotitolo-whitepaper{
+    margin-left:3px;
+    color:#000000;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.linea-grigia{
+    width:500px;
+    border : 1px solid #F7F7F7;
+}
+.extralinea{
+    width:40%!important;
+}
+.piucolore{
+    color:#1a7431;
+    font-size:20px;
+}
