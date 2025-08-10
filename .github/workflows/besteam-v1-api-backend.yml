@@ -1,0 +1,49 @@
+name: Besteam V1 Api Backend
+on:
+  push:
+    branches:
+      - 'master'
+    paths:
+      - Api/besteam-v1-api-backend/**/*.*
+      - .github/workflows/besteam-v1-api-backend.yml
+
+env:
+  TENANT_NAME: "BesteamPipelines"
+  PIPELINE_NAME: "besteam-v1-api-backend"
+  ORGANIZATION_NAME: "BesteamDevelopment"
+  REPO_NAME: "Besteam"
+  REPO_SLUG: "besteam-v1-api-backend"
+  RELEASE_VERSION: "1.0.0"
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch Pipeline
+        env:
+          XPIPE_HOOK_TOKEN: ${{ secrets.XPIPE_HOOK_TOKEN }}
+        run: |
+          url="https://api.github.com/repos/${TENANT_NAME}/${PIPELINE_NAME}/actions/workflows/pipeline.yml/dispatches"
+
+          # payload JSON with Node
+          payload=$(node -e 'console.log(JSON.stringify({
+            ref: "master",                       
+            inputs: {
+              ORGANIZATION_NAME: process.env.ORGANIZATION_NAME,
+              REPO_NAME: process.env.REPO_NAME,
+              REPO_SLUG: process.env.REPO_SLUG, 
+              RELEASE_VERSION: process.env.RELEASE_VERSION
+            }
+          }))')
+
+          echo "Dispatch to: $url"
+          echo "Payload: $payload"
+
+          curl -L -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${XPIPE_HOOK_TOKEN}" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "$url" \
+            -d "$payload"
+
+###
