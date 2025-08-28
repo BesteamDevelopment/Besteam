@@ -8,11 +8,11 @@
 		<version>3.4.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.besteam.backend</groupId>
-	<artifactId>besteam-backend</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>Besteam Backend</name>
-	<description>Backend for Besteam Game</description>
+	<groupId>io.besteam.api.backend</groupId>
+	<artifactId>besteam-v1-api-backend</artifactId>
+	<version>1.0.0</version>
+	<name>Besteam V1 Api Backend</name>
+	<description>Api Backend for Besteam Game</description>
 	<url/>
 	<licenses>
 		<license/>

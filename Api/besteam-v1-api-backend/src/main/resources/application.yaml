@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: ${BESTEAM_V1_API_BACKEND_SPRING_APPLICATION_NAME:'Besteam Backend'}
+  profiles:
+    active: ${BESTEAM_V1_API_BACKEND_SPRING_PROFILES_ACTIVE:dev}
+  data:
+    mongodb:
+      uri: ${BESTEAM_V1_API_BACKEND_SPRING_DATA_MONGODB_URI:'mongodb://localhost:27017/besteam_db'}
+
+  datasource:
+    url: ${BESTEAM_V1_API_BACKEND_SPRING_DATASOURCE_URL:'jdbc:mysql://localhost:3307/besteam_db?useSSL=false&serverTimezone=UTC'}
+    username: ${BESTEAM_V1_API_BACKEND_SPRING_DATASOURCE_USERNAME:''}
+    password: ${BESTEAM_V1_API_BACKEND_SPRING_DATASOURCE_PASSWORD:''}
+    driver-class-name: ${BESTEAM_V1_API_BACKEND_SPRING_DATASOURCE_DRIVER_CLASS_NAME:'com.mysql.cj.jdbc.Driver'}
+
+  jpa:
+    database-platform: ${BESTEAM_V1_API_BACKEND_SPRING_JPA_DATABASE_PLATFORM:'org.hibernate.dialect.MySQLDialect'}
+    hibernate:
+      ddl-auto: ${BESTEAM_V1_API_BACKEND_SPRING_JPA_HIBERNATE_DDL_AUTO:none}
+
+app:
+  jwt-secret: ${BESTEAM_V1_API_BACKEND_APP_JWT_SECRET:'besteamGame'}
+  jwt-expiration-in-ms: ${BESTEAM_V1_API_BACKEND_APP_JWT_EXPIRATION_IN_MS:86400000}
+
+springdoc:
+  swagger-ui:
+    enabled: ${BESTEAM_V1_API_BACKEND_SWAGGER_ENABLED:true}
+
+integrations:
+  check-crypto-address:
+    api-key: ${BESTEAM_V1_API_BACKEND_CHECK_CRYPTO_ADDRESS_API_KEY:'ck_ac0ba0a51b095dac93d39b6665204e7fb7f256f77312dc93c47e736514a017fe'}
+    api-url: ${BESTEAM_V1_API_BACKEND_CHECK_CRYPTO_ADDRESS_API_URL:'https://api.checkcryptoaddress.com/wallet-checks'}
