@@ -7,6 +7,8 @@ COPY ./ /var/www/app
 
 WORKDIR /var/www/app
 
+USER root
+
 # Build dependecies
 RUN mvn compile
 
@@ -43,6 +45,8 @@ ENV JMX_EXPORTER_PORT="8080"
 # Install application
 COPY --from=builder /var/www/app/target/besteam-v1-api-backend-${TAG_VERSION}.jar /var/www/app/app.jar
 
+USER root
+
 # Setting Timezone and Fixing permission
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && \
     chmod -R 770 /var/www/app && \
@@ -50,5 +54,5 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone &
 
 #java -Xmx1024M -Xms1024M -jar app.jar
 #ENTRYPOINT exec java -javaagent:/opt/jmx_prometheus_javaagent.jar=$JMX_EXPORTER_PORT:/opt/config.yaml $JAVA_OPTS -jar app.jar
-#
-#USER ${SINDRIA_USER}
+
+USER ${SINDRIA_USER}
