@@ -10,7 +10,6 @@ on:
 env:
   TENANT_NAME: "BesteamPipelines"
   PIPELINE_NAME: "besteam-v1-api-backend"
-  ORGANIZATION_NAME: "BesteamDevelopment"
   REPO_NAME: "Besteam"
   BUSINESS_DOMAIN: "Api"
   REPO_SLUG: "besteam-v1-api-backend"
@@ -30,7 +29,6 @@ jobs:
           payload=$(node -e 'console.log(JSON.stringify({
             ref: "master",                       
             inputs: {
-              ORGANIZATION_NAME: process.env.ORGANIZATION_NAME,
               REPO_NAME: process.env.REPO_NAME,
               BUSINESS_DOMAIN: process.env.BUSINESS_DOMAIN,
               REPO_SLUG: process.env.REPO_SLUG, 
@@ -48,4 +46,4 @@ jobs:
             "$url" \
             -d "$payload"
 
-###
+#####
