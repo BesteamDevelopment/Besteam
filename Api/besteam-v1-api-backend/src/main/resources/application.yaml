@@ -36,8 +36,8 @@ spring:
 
 
 app:
-  jwt-secret: ${APPLICATION_APP_JWT_SECRET:besteamGame}
-  jwt-expiration-in-ms: ${APPLICATION_APP_JWT_EXPIRATION_IN_MS:86400000}
+  jwtSecret: ${APPLICATION_APP_JWT_SECRET:besteamGame}
+  jwtExpirationInMs: ${APPLICATION_APP_JWT_EXPIRATION_IN_MS:86400000}
 
 springdoc:
   swagger-ui:
