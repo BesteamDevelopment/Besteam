@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>io.besteam.api.backend</groupId>
 	<artifactId>besteam-v1-api-backend</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>Besteam V1 Api Backend</name>
 	<description>Api Backend for Besteam Game</description>
 	<url/>
