@@ -1,32 +1,49 @@
 spring:
   application:
-    name: ${BESTEAM_V1_API_BACKEND_SPRING_APPLICATION_NAME:'Besteam Backend'}
-  profiles:
-    active: ${BESTEAM_V1_API_BACKEND_SPRING_PROFILES_ACTIVE:dev}
+    name: BesteamBackend
   data:
     mongodb:
-      uri: ${BESTEAM_V1_API_BACKEND_SPRING_DATA_MONGODB_URI:'mongodb://localhost:27017/besteam_db'}
-
+      uri: ${APPLICATION_SPRING_DATA_MONGODB_URI:mongodb://localhost:27017/besteam_db}
   datasource:
-    url: ${BESTEAM_V1_API_BACKEND_SPRING_DATASOURCE_URL:'jdbc:mysql://localhost:3307/besteam_db?useSSL=false&serverTimezone=UTC'}
-    username: ${BESTEAM_V1_API_BACKEND_SPRING_DATASOURCE_USERNAME:''}
-    password: ${BESTEAM_V1_API_BACKEND_SPRING_DATASOURCE_PASSWORD:''}
-    driver-class-name: ${BESTEAM_V1_API_BACKEND_SPRING_DATASOURCE_DRIVER_CLASS_NAME:'com.mysql.cj.jdbc.Driver'}
-
+    driver-class-name: ${APPLICATION_SPRING_DATASOURCE_DRIVER_CLASS_NAME:com.mysql.cj.jdbc.Driver}
+    url: ${APPLICATION_SPRING_DATASOURCE_URL:jdbc:mysql://besteam-v1-api-backend-db.besteam-prd.svc.cluster.local:3306/app?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&sslMode=DISABLED}
+    #url: ${APPLICATION_SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3307/besteam_db?useSSL=false&serverTimezone=UTC}
+    username: ${APPLICATION_SPRING_DATASOURCE_USERNAME:root}
+    password: ${APPLICATION_SPRING_DATASOURCE_PASSWORD:secret}
+    hikari:
+      maximum-pool-size: 50
+      minimum-idle: 15
+      connection-timeout: 20000
   jpa:
-    database-platform: ${BESTEAM_V1_API_BACKEND_SPRING_JPA_DATABASE_PLATFORM:'org.hibernate.dialect.MySQLDialect'}
+    #database-platform: ${APPLICATION_SPRING_JPA_DATABASE_PLATFORM:org.hibernate.dialect.MySQLDialect}
     hibernate:
-      ddl-auto: ${BESTEAM_V1_API_BACKEND_SPRING_JPA_HIBERNATE_DDL_AUTO:none}
+      # Hibernate ddl auto (create, create-drop, validate, update)
+      #ddl-auto: update
+      #ddl-auto: none
+      ddl-auto: ${APPLICATION_SPRING_JPA_HIBERNATE_DDL_AUTO:update}
+    properties:
+      hibernate:
+        # Enable only for debug
+        show_sql: ${APPLICATION_SPRING_JPA_HIBERNATE_SHOW_SQL:false}
+        # Hibernate detect dialect automatically
+        dialect: ${APPLICATION_SPRING_JPA_HIBERNATE_DIALECT:org.hibernate.dialect.MySQLDialect}
+        format_sql: true
+        generate_statistics: ${APPLICATION_SPRING_JPA_HIBERNATE_GENERATE_STATISTICS:false}
+        jdbc:
+          batch_size: ${APPLICATION_SPRING_JPA_HIBERNATE_JDBC_BATCH_SIZE:30}
+        order_inserts: ${APPLICATION_SPRING_JPA_HIBERNATE_ORDER_INSERTS:true}
+        order_updates: ${APPLICATION_SPRING_JPA_HIBERNATE_ORDER_UPDATES:true}
+
 
 app:
-  jwt-secret: ${BESTEAM_V1_API_BACKEND_APP_JWT_SECRET:'besteamGame'}
-  jwt-expiration-in-ms: ${BESTEAM_V1_API_BACKEND_APP_JWT_EXPIRATION_IN_MS:86400000}
+  jwt-secret: ${APPLICATION_APP_JWT_SECRET:besteamGame}
+  jwt-expiration-in-ms: ${APPLICATION_APP_JWT_EXPIRATION_IN_MS:86400000}
 
 springdoc:
   swagger-ui:
-    enabled: ${BESTEAM_V1_API_BACKEND_SWAGGER_ENABLED:true}
+    enabled: ${APPLICATION_SPRINGDOC_SWAGGER_UI_ENABLED:true}
 
 integrations:
   check-crypto-address:
-    api-key: ${BESTEAM_V1_API_BACKEND_CHECK_CRYPTO_ADDRESS_API_KEY:'ck_ac0ba0a51b095dac93d39b6665204e7fb7f256f77312dc93c47e736514a017fe'}
-    api-url: ${BESTEAM_V1_API_BACKEND_CHECK_CRYPTO_ADDRESS_API_URL:'https://api.checkcryptoaddress.com/wallet-checks'}
+    api-key: ${APPLICATION_INTEGRATIONS_CHECK_CRYPTO_ADDRESS_API_KEY:ck_ac0ba0a51b095dac93d39b6665204e7fb7f256f77312dc93c47e736514a017fe}
+    api-url: ${APPLICATION_INTEGRATIONS_CHECK_CRYPTO_ADDRESS_API_URL:https://api.checkcryptoaddress.com/wallet-checks}
