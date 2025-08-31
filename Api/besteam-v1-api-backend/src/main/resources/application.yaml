@@ -6,7 +6,7 @@ spring:
       uri: ${APPLICATION_SPRING_DATA_MONGODB_URI:mongodb://localhost:27017/besteam_db}
   datasource:
     driver-class-name: ${APPLICATION_SPRING_DATASOURCE_DRIVER_CLASS_NAME:com.mysql.cj.jdbc.Driver}
-    url: ${APPLICATION_SPRING_DATASOURCE_URL:jdbc:mysql://besteam-v1-api-backend-db.besteam-prd.svc.cluster.local:3306/app?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&sslMode=DISABLED}
+    url: ${APPLICATION_SPRING_DATASOURCE_URL:jdbc:mysql://besteam-v1-api-backend-db.besteam-prd.svc.cluster.local:3306/app?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&allowPublicKeyRetrieval=true&sslMode=DISABLED}
     #url: ${APPLICATION_SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3307/besteam_db?useSSL=false&serverTimezone=UTC}
     username: ${APPLICATION_SPRING_DATASOURCE_USERNAME:root}
     password: ${APPLICATION_SPRING_DATASOURCE_PASSWORD:secret}
