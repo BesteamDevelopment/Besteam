@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UserRegistrationDto {
 
-    private String email;
-    private String nickname;
+//    private String email;
+//    private String nickname;
     private String nationality;
     @JsonProperty("player_location")
     private String playerLocation;
@@ -20,8 +20,8 @@ public class UserRegistrationDto {
     private String gender;
     @JsonProperty("favourite_role")
     private String favouriteRole;
-    @JsonProperty("accepted_newsletter")
-    private boolean acceptedNewsletter;
-    @JsonProperty("accepted_privacy")
-    private boolean acceptedPrivacy;
+//    @JsonProperty("accepted_newsletter")
+//    private boolean acceptedNewsletter;
+//    @JsonProperty("accepted_privacy")
+//    private boolean acceptedPrivacy;
 }

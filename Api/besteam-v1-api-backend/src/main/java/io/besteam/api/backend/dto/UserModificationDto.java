@@ -14,31 +14,17 @@ import java.math.BigDecimal;
 @Setter
 public class UserModificationDto {
 
-    @JsonProperty("game_wallet")
-    private BigDecimal gameWallet;
     private String nickname;
-    private String nationality;
 
     @JsonProperty("player_location")
     private String playerLocation;
 
-    @JsonProperty("date_of_birth")
-    private String dateOfBirth;
     private String gender;
 
     @JsonProperty("favourite_role")
     private String favouriteRole;
 
-    @JsonProperty("actual_role")
-    private String actualRole;
-
     @JsonProperty("accepted_newsletter")
     private Boolean acceptedNewsletter;
 
-    @JsonProperty("accepted_privacy")
-    private Boolean acceptedPrivacy;
-    private Boolean enabled;
-
-    @JsonProperty("payment_verified")
-    private Boolean paymentVerified;
 }

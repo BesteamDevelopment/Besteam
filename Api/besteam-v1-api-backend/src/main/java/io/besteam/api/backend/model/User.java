@@ -36,11 +36,14 @@ public class User {
 
     private String nickname;
 
-    @Column(name = "check_newsletter")
-    private boolean acceptedNewsletter = false;
+    @Column(unique = true)
+    private String password;
 
-    @Column(name = "accepted_privacy")
-    private boolean acceptedPrivacy;
+    @Column(name = "check_newsletter")
+    private boolean checkNewsletter = false;
+
+    @Column(name = "check_privacy")
+    private boolean checkPrivacy;
 
     private String nationality;
 
@@ -82,5 +85,8 @@ public class User {
     @Enumerated(EnumType.STRING)
     @Column(name = "registration_state")
     private RegistrationState registrationState;
+
+    @Column(name= "nickname_changed")
+    private boolean nicknameChanged;
 
 }

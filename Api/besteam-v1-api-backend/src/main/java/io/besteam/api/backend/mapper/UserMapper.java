@@ -25,7 +25,7 @@ public class UserMapper {
         dto.setWalletCode(user.getWalletCode());
         dto.setEmail(user.getEmail());
         dto.setNickname(user.getNickname());
-        dto.setCheckNewsletter(user.isAcceptedNewsletter());
+        dto.setCheckNewsletter(user.isCheckNewsletter());
         dto.setNationality(user.getNationality());
         dto.setPlayerLocation(user.getPlayerLocation());
         dto.setDateOfBirth(user.getDateOfBirth());

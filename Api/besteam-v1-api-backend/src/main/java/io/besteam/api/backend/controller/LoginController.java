@@ -41,7 +41,7 @@ public class LoginController {
 //        if (!StringUtils.equals(user.getPassword(), loginRequestDto.getPassword())) {
 //            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
 //        }
-
+        System.out.println("Ciao");
         String token = jwtTokenProvider.generateLoginToken(user);
 
         return ResponseEntity.ok(new RegistrationResponseDto(token, user.getRegistrationState().toString(), userId.toString()));

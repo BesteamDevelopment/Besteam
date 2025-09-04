@@ -23,13 +23,18 @@ public class UserDto {
 
     @JsonInclude(value = JsonInclude.Include.NON_NULL)
     private String email;
+
     @JsonInclude(value = JsonInclude.Include.NON_NULL)
     private String nickname;
 
+    private String password;
+
     @JsonProperty("check_newsletter")
     private boolean checkNewsletter;
+
     @JsonProperty("check_privacy")
     private boolean checkPrivacy;
+
     @JsonInclude(value = JsonInclude.Include.NON_NULL)
     private String nationality;
 
@@ -48,6 +53,7 @@ public class UserDto {
     @JsonProperty("favourite_role")
     @JsonInclude(value = JsonInclude.Include.NON_NULL)
     private String favouriteRole;
+
     private boolean enabled;
 
     @JsonProperty("is_verified")
@@ -56,6 +62,10 @@ public class UserDto {
     @JsonProperty("created_at")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "UTC")
     private Instant createdAt;
+
+    @JsonProperty("updated_at")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "UTC")
+    private Instant updatedAt;
 
     @JsonProperty("game_wallet")
     private BigDecimal gameWallet;
@@ -69,4 +79,6 @@ public class UserDto {
 
     @JsonProperty("registration_state")
     private String registrationState;
+
+    private boolean nicknameChanged;
 }
